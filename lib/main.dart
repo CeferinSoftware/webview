@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromRGBO(0, 0, 0, 1),
+          seedColor: Color.fromRGBO(33, 150, 243, 1),
           brightness: Brightness.light,
         ),
         useMaterial3: true,
@@ -59,7 +60,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Kannasol'),
-        backgroundColor: Color.fromRGBO(0, 0, 0, 1),
+        backgroundColor: Color.fromRGBO(33, 150, 243, 1),
         foregroundColor: Colors.white,
         actions: [
           IconButton(
@@ -74,7 +75,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
           if (isLoading)
             Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(0, 0, 0, 1)),
+                valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(33, 150, 243, 1)),
               ),
             ),
         ],
